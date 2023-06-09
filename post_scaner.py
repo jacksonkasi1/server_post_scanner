@@ -39,7 +39,7 @@ for link in links:
         except socket.error:
             pass
 
-if len(open_ports) > 0:
+if open_ports:
     with open("hack.txt", "a") as f:
         f.write("Open ports:\n")
         for website, port in open_ports:
